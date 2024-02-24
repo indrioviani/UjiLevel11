@@ -37,8 +37,10 @@
                         <a href="#"><img width="80x" src="images/logoo.png" alt="#" /></a>
                       </div>
                       <div class="information_f">
-                        <p><strong>ADDRESS:</strong> 28 White tower, Street Name New York City, USA</p>
-                        <p><strong>TELEPHONE:</strong> +91 987 654 3210</p>
+                        <p><strong>ADDRESS:</strong>Kantin SMK Negeri 1 Ciomas
+Jl. Raya Laladon, Kec Ciomas
+Kab. Bogor, Jawa Barat</p>
+                        <p><strong>TELEPHONE:</strong> +62 897-5618-892</p>
                         <p><strong>EMAIL:</strong> yourmain@gmail.com</p>
                       </div>
                    </div>
@@ -88,14 +90,8 @@
                   </div>
                   </div>
                </div>
+               <p class="mx-auto">© 2024 Team Samudra`Rasa<br>         
+         </p>
             </div>
          </div>
       </footer>
-           <!-- footer end -->
-           <div class="cpy_">
-         <p class="mx-auto">© 2021 All Rights Reserved By <a href="https://html.design/">Free Html Templates</a><br>
-         
-            Distributed By <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
-         
-         </p>
-      </div>

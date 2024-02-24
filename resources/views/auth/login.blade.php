@@ -1,9 +1,16 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
 <x-guest-layout>
+    
+    <!-- Content lainnya -->
+
+
     <x-authentication-card>
         <x-slot name="logo">
         <img width="75" src="images/logoo.png" alt="#" />
         </x-slot>
+       
 
         <x-validation-errors class="mb-4" />
 
@@ -36,15 +43,17 @@
             <div class="flex items-center justify-end mt-4">
                 @if (Route::has('password.request'))
                     <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
-                        {{ __('Forgot your password?') }}
+                        {{ __('Lupa Kata Sandi?') }}
                     </a>
                 @endif  
             </div>
             <div class="flex items-center justify-end mt-4">
-            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('register') }}">Don't have an account yet?</a></div>
+            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('register') }}">Belum Punya Akun?</a></div>
             <x-button class="ms-4">
                     {{ __('Log in') }}
-                </x-button>
-        </form>
+                </x-button> 
+        </form><a href="/" class="btn btn-primary ms-4">
+        <i class="fas fa-arrow-left"></i> Kembali
+    </a>
     </x-authentication-card>
 </x-guest-layout>

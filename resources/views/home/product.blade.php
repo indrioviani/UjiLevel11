@@ -48,7 +48,7 @@
 
                         @else
 
-                        <h6 style="color: blue;">
+                        <h6 style="color: black;">
                         Price
                         <br>
                            Rp {{$products->price}}

@@ -98,9 +98,17 @@ h2 {
 }
 
 .header_section.fixed-top .navbar-brand img {
-  max-height: 50px; /* Sesuaikan tinggi logo navbar saat di-scroll */
+  max-height: 70px; /* Sesuaikan tinggi logo navbar saat di-scroll */
 }
-
+.header_section.fixed-top .navbar-brand .brand-name{
+  align-items: center;
+  font-size: 25px;
+}
+@media screen and (max-width: 767px){
+  .header_section.fixed-top .navbar-brand .brand-name{
+    font-size: 20px;
+  }
+}
 .header_section.fixed-top .nav-link {
   color: #333; /* Warna teks menu saat di-scroll */
 }
@@ -304,10 +312,6 @@ a:focus {
   padding: 90px 0 75px 0;
 }
 
-.slider_section .row {
-  align-items: center;
-}
-
 .slider_section #customCarousel1 {
   width: 100%;
   position: unset;
@@ -323,6 +327,7 @@ a:focus {
   margin-bottom: 15px;
   color: #f7409c;
   line-height: 70px;
+  margin-top: 50px;
 }
 
 .slider_section .detail-box h1 span {
@@ -392,15 +397,21 @@ a:focus {
   background-color: #f7444e;
 }
 
-.slider_box {
-  width: 100%;
+.slider_section .row {
+  display: flex;
+  align-items: center; /* Memastikan konten berada di tengah */
+}
+
+.slider_section .col-lg-6 {
+  width: 50%; /* Setiap kolom mengambil setengah lebar dari parentnya */
+  padding: 0 15px; /* Memberikan sedikit ruang di sisi kanan dan kiri */
 }
 
 .slider_section .imgD {
-  width: 100%;
+  width: 90%;
   height: auto;
   object-fit: cover;
-  animation: spin 8s linear infinite; /* Menambahkan animasi berputar */
+  animation: spin 40s linear infinite; /* Menambahkan animasi berputar */
 }
 
 @keyframes spin {
@@ -412,25 +423,18 @@ a:focus {
   }
 }
 
-
-@media screen and (min-width: 768px) {
-  .slider_section {
-    flex-direction: row;
+@media screen and (max-width: 767px) {
+  .slider_section .row {
+      flex-direction: column; /* Ubah tata letak menjadi vertikal di layar kecil */
   }
 
-  .slider_box {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    z-index: -1;
-  } 
-  .slider_section .detail-box {
-    text-align: left;
-    margin-right: 50px;
+  .slider_section .col-lg-6 {
+      width: 85%; /* Setiap kolom mengambil lebar penuh di layar kecil */
+      padding: 0; /* Hapus padding di layar kecil */
+      margin-left: 10px;
   }
 }
+
 
 .product_section .heading_container {
   -webkit-box-flex: 1;
@@ -457,6 +461,11 @@ a:focus {
     box-shadow: 5px 5px 5px -5px rgba(0,0,0,.2);
     border: solid #f7409c 2px;
     border-radius: 50px;
+}
+@media screen and (max-width: 567px) {
+  .product_section .box{
+   width: 100%;
+  }
 }
 
 .product_section .box .img-box {
@@ -693,9 +702,10 @@ padding: 150px 0 75px 0;
   }
 
   .arrival_section .arrival_box img {
-    width: 80%;
+    width: 90%;
     margin-top: 180%;
     height: auto;
+    margin-left: 50px;
   }
 
   .arrival_section a {
@@ -1196,6 +1206,7 @@ footer {
   background-color: #FFF8EF;
   overflow: hidden;
   justify-content: center;
+  margin-bottom: 100px;
 }
 .contact-container {
   display: flex;
@@ -1297,29 +1308,19 @@ iframe {
   }
 }
 
-
-/** cpy **/
-
-.cpy_ {
-    background: #222;
+.mx-auto {
+    margin: 0;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
     text-align: center;
-    padding: 20px 0;
 }
 
-.cpy_ p {
-    margin: 0;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 400;
+@media screen and (max-width: 768px) {
+  .mx-auto{
+    width: auto;
+  }
 }
-
-.cpy_ p a {
-    margin: 0;
-    color: #f7444e;
-    font-size: 15px;
-    font-weight: 400;
-}
-
 http://kute-themes.com/html/boutique/html/index.html
 https://template.hasthemes.com/noraure/noraure/index.html
 https://preview.hasthemes.com/xoss-preview/xoss/index.html
