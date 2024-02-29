@@ -11399,7 +11399,7 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #191c24;
+  background-color: #FFF7F1;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem; }
@@ -11607,7 +11607,7 @@ input[type="button"].btn-block {
   margin-left: -1px;
   line-height: 1.25;
   color: #007bff;
-  background-color: #000000;
+  background-color: #FFF7F1;
   border: 1px solid #dee2e6; }
   .page-link:hover, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button a:hover,
   .jsgrid .jsgrid-pager .jsgrid-pager-page a:hover {
@@ -15716,7 +15716,7 @@ body,
 html {
   overflow-x: hidden;
   padding-right: 0 !important;
-  background-color: #191c24; }
+  background-color: #FFF7F1; }
 
 *:-moz-full-screen,
 *:-webkit-full-screen,
@@ -19027,7 +19027,7 @@ body.avgrund-active {
     color: #ffffff; }
 
 .fc-external-events .fc-event {
-  background: #191c24;
+  background: #FFF7F1;
   color: #ffffff;
   border-width: 0 0 0 4px;
   padding: 16px;
@@ -20293,7 +20293,8 @@ div.tagsinput {
       margin: auto; } }
 
 .auth .brand-logo {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+ }
   .auth .brand-logo img {
     width: 150px; }
 
@@ -20450,7 +20451,7 @@ div.tagsinput {
       .navbar .navbar-menu-wrapper .count-indicator .count-number {
         position: absolute;
         border-radius: 100%;
-        border: 2px solid #191c24; }
+        border: 2px solid #FFF7F1; }
       .navbar .navbar-menu-wrapper .count-indicator .count-symbol {
         top: 17px;
         right: -3px;
@@ -20637,8 +20638,9 @@ div.tagsinput {
     -webkit-transition: width 0.25s ease, background 0.25s ease;
     -moz-transition: width 0.25s ease, background 0.25s ease;
     -ms-transition: width 0.25s ease, background 0.25s ease;
-    background: #191c24;
+    background: #FFF7F1;
     width: 244px;
+    text-align: center;
     height: 70px; }
     @media (max-width: 991px) {
       .sidebar .sidebar-brand-wrapper {
@@ -20804,7 +20806,8 @@ div.tagsinput {
               color: #6c7293;
               white-space: nowrap; }
             .sidebar .nav .nav-item.profile .profile-desc .profile-name h5 {
-              white-space: nowrap; }
+              white-space: nowrap;
+              color: black; }
           .sidebar .nav .nav-item.profile .profile-desc .profile-pic {
             display: flex;
             align-items: center; }
@@ -21115,7 +21118,6 @@ div.tagsinput {
   transition: width 0.25s ease, margin 0.25s ease;
   width: 100%;
   min-height: calc(100vh - 70px);
-  padding-top: 70px;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
@@ -21126,7 +21128,7 @@ div.tagsinput {
       width: 100%; } }
 
 .content-wrapper {
-  background: #000000;
+  background: #FFF7F1;
   padding: 1.875rem 1.75rem;
   width: 100%;
   -webkit-flex-grow: 1;

@@ -2,7 +2,7 @@
          <div class="container">
             <div class="heading_container heading_center">
                <h2>
-                  Our <span>products</span>
+                  Menu <span>Kita</span>
                </h2>
             </div>
             <div class="row">
@@ -11,17 +11,21 @@
                   <div class="box">
                      <div class="option_container">
                         <div class="options">
-                           <a href="" class="option1">
+                           <input type="number" name="quantity" value="1" min="1" style="width: 100px;">
+                           <a href="{{ route('login') }}" class="option1">
                            Add To Cart
+                           </a>
+                           <a href="{{ route('login') }}" class="option1">
+                           Lihat Detail
                            </a>
                            <form action="{{url('add_cart', $products->id)}}" method="Post">
                               @csrf
                               <div class="row">
                                  <div class="col-md-4">
-                              <input type="number" name="quantity" value="1" min="1" style="width: 100px;">
+                              
                                  </div>
                                  <div class="col-md-4">
-                              <input type="submit" value="Add To Cart">
+                  
                                  </div>
                               </div>
                            </form>

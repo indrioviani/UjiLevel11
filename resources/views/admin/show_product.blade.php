@@ -4,26 +4,26 @@
     <!-- Required meta tags -->
     @include('admin.css')
     <style type="text/css">
-        .center{
+        .center {
             margin: auto;
             width: 50%;
             border: 2px solid white;
             text-align: center;
             margin-top: 40px;
         }
-        .font_size{
+        .font_size {
             text-align: center;
             font-size: 40px;
             padding-top: 20px;
         }
-        .img_size{
+        .img_size {
             width: 150px;
             height: 150px;
         }
-        .th_color{
+        .th_color {
             background: skyblue;
         }
-        .th_deg{
+        .th_deg {
             padding: 20px;
         }
     </style>
@@ -44,35 +44,41 @@
           </div>
           @endif
             <h2 class="font_size">All Products</h2>
+            <div>
+            <a class="btn btn-success" href="{{url('add_product')}}">Tambah</a>
+            </div>
             <table class="center">
                 <tr class="th_color">
-                <th class="th_deg">Product Title</th>
-                <th class="th_deg">Description</th>
-                <th class="th_deg">Quantity</th>
-                <th class="th_deg">Category</th>
-                <th class="th_deg">Price</th>
-                <th class="th_deg">Discount Price</th>
-                <th class="th_deg">Product Image</th>
-                <th class="th_deg">Delete</th>
-                <th class="th_deg">Edit</th>
+                    <th class="th_deg">#</th>
+                    <th class="th_deg">Product Title</th>
+                    <th class="th_deg">Description</th>
+                    <th class="th_deg">Quantity</th>
+                    <th class="th_deg">Category</th>
+                    <th class="th_deg">Price</th>
+                    <th class="th_deg">Discount Price</th>
+                    <th class="th_deg">Product Image</th>
+                    <th class="th_deg">Delete</th>
+                    <th class="th_deg">Edit</th>
                 </tr>
+                <?php $no = 1; ?>
                 @foreach($product as $product)
                 <tr>
-                <td>{{$product->title}}</td>
-                <td>{{$product->description}}</td>
-                <td>{{$product->quantity}}</td>
-                <td>{{$product->category}}</td>
-                <td>{{$product->price}}</td>
-                <td>{{$product->discount_price}}</td>
-                <td>
-                <img class="img_size" src="/product/{{$product->image}}">
-                </td>
-                <td>
-                  <a class="btn btn-danger" onclick="return confirm('Are You Sure to Delete This?')" href="{{url('delete_product', $product->id)}}">Delete</a>
-                </td>
-                <td>
-                <a class="btn btn-success" href="{{url('update_product', $product->id)}}">Edit</a>
-                </td>
+                    <td>{{$no++}}</td>
+                    <td>{{$product->title}}</td>
+                    <td>{{$product->description}}</td>
+                    <td>{{$product->quantity}}</td>
+                    <td>{{$product->category}}</td>
+                    <td>{{$product->price}}</td>
+                    <td>{{$product->discount_price}}</td>
+                    <td>
+                        <img class="img_size" src="/product/{{$product->image}}">
+                    </td>
+                    <td>
+                        <a class="btn btn-danger" onclick="return confirm('Are You Sure to Delete This?')" href="{{url('delete_product', $product->id)}}">Delete</a>
+                    </td>
+                    <td>
+                        <a class="btn btn-success" href="{{url('update_product', $product->id)}}">Edit</a>
+                    </td>
                 </tr>
                 @endforeach
             </table>

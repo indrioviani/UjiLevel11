@@ -11,7 +11,7 @@
       <meta name="description" content="" />
       <meta name="author" content="" />
       <link rel="shortcut icon" href="images/logoo.png" type="">
-      <title>Samudra`Rasa</title>
+      <title>SamudraRasa</title>
       <!-- bootstrap core css -->
       <link rel="stylesheet" type="text/css" href="home/css/bootstrap.css" />
       <!-- font awesome style -->

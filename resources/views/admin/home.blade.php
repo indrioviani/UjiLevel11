@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+  lang="en"
+  class="light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="adminn/assets/"
+  data-template="vertical-menu-template-free"
+>
   <head>
-    <!-- Required meta tags -->
-    @include('admin.css')
+    
+  @include('admin.css')
   </head>
+
   <body>
-    <div class="container-scroller">
-      <!-- partial:partials/_sidebar.html -->
-      @include('admin.sidebar')
-      <!-- partial -->
-      @include('admin.header')
-        <!-- partial -->
-        @include('admin.body')
+  @include('admin.header')
+  @include('admin.body')
+  @include('admin.sidebar')
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
     </div>
-    <!-- container-scroller -->
-    <!-- plugins:js -->
     @include('admin.script')
-    <!-- End custom js for this page -->
   </body>
 </html>

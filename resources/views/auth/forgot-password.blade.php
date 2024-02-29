@@ -1,11 +1,12 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 <x-guest-layout>
     <x-authentication-card>
-        <x-slot name="logo">
-            <x-authentication-card-logo />
+    <x-slot name="logo">
+        <img width="75" src="images/logoo.png" alt="#" />
         </x-slot>
 
         <div class="mb-4 text-sm text-gray-600">
-            {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
+            {{ __('lupa kata sandi Anda? Tidak masalah. Cukup beri tahu kami alamat email Anda dan kami akan mengirimkan email berisi tautan pengaturan ulang kata sandi yang memungkinkan Anda memilih yang baru.') }}
         </div>
 
         @if (session('status'))
@@ -26,9 +27,11 @@
 
             <div class="flex items-center justify-end mt-4">
                 <x-button>
-                    {{ __('Email Password Reset Link') }}
+                    {{ __('Ganti Kata Sandi') }}
                 </x-button>
             </div>
-        </form>
+        </form><a href="{{ route('login') }}" class="btn btn-primary ms-4">
+        <i class="fas fa-arrow-left"></i> Kembali
+    </a>
     </x-authentication-card>
 </x-guest-layout>

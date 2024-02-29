@@ -28,14 +28,13 @@ class HomeController extends Controller
 
         if($usertype=='1')
         {
-            return view('admin.home');
+            return view('admin.body');
         }
 
         else
         {
             $product=Product::paginate(10);
-            return view('home.userpage', compact('product'));
-            return view('home.userpage');
+            return view('user.userpage', compact('product'));
         } 
     }
         public function add_cart(Request $request, $id)
@@ -76,7 +75,7 @@ class HomeController extends Controller
         {
             $id=Auth::user()->id;
         $cart=cart::where('user_id', '=', $id)->get();
-        return view('home.showcart', compact('cart'));
+        return view('user.showcart', compact('cart'));
         }
         else{
             return redirect('login'); 
@@ -109,9 +108,9 @@ class HomeController extends Controller
             $order->product_id=$data->Product_id;
 
             $order->payment_status='cash on delivery';
-            $order->delivery_status='processing';
 
             $order->save();
+            
 
             $cart_id=$data->id;
 
@@ -121,4 +120,5 @@ class HomeController extends Controller
         }
         return redirect()->back()->with('message', 'We Have Received Your Order. We Will Connect With You Soon...');
     }
+    
 }

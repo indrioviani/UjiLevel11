@@ -16,8 +16,8 @@
                                             </h1>
                                             <p>Mari menjelajahi dunia rasa melalui hidangan lezat kami yang disajikan dengan cinta dan kreativitas</p>                                  
                                             <div class="btn-box">
-                                                <a href="#about-section" class="btn1">Read More</a>
-                                                <a href="{{ route('login') }}" class="black-button">Order Now</a>
+                                                <a href="#about-section" class="btn1">Selengkapnya!</a>
+                                                <a href="{{ route('login') }}" class="black-button">Pesan Sekarang!</a>
                                             </div>
                                         </div>
                                     </div>

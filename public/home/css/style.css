@@ -448,25 +448,50 @@ a:focus {
           align-items: center;
   position: relative;
   padding: 40px 0 75px 0;
+  
 }
 
 .product_section .box {
-    position: relative;
-    margin-top: 20px;
-    padding: 35px 35px;
-    background-color: #f7f8f9;
-    -webkit-transition: all .3s;
-    transition: all .3s;
-    overflow: hidden;
-    box-shadow: 5px 5px 5px -5px rgba(0,0,0,.2);
-    border: solid #f7409c 2px;
-    border-radius: 50px;
+  position: relative;
+  margin-top: 20px;
+  padding: 35px 35px;
+  background-color: #f7f8f9;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px -5px rgba(0,0,0,.2);
+  border: solid #f7409c 2px;
+  border-radius: 50px;
+
+  /* Centrally aligning the box */
 }
-@media screen and (max-width: 567px) {
-  .product_section .box{
-   width: 100%;
+
+.input {
+  margin-top: 10px;
+  padding: 10px 20px; /* Atur padding sesuai kebutuhan */
+  font-size: 16px; /* Atur ukuran font sesuai kebutuhan */
+  border: none;
+  background-color: #f7409c; /* Warna latar belakang */
+  color: #fff; /* Warna teks */
+  cursor: pointer;
+  border-radius: 5px; /* Atur sudut border sesuai kebutuhan */
+}
+
+/* Efek hover */
+.input:hover {
+  background-color: #f7409c; /* Warna latar belakang saat hover */
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .product_section .box {
+      width: 80%; /* Set width as needed */
+      margin: 20px auto; /* Center the box horizontally */
   }
 }
+
+
 
 .product_section .box .img-box {
   display: -webkit-box;
@@ -544,6 +569,22 @@ a:focus {
   transition: all .2s;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
+}
+.detail-box {
+  height: 100%; /* Menggunakan tinggi maksimum */
+  display: flex; /* Menggunakan flexbox */
+  flex-direction: column; /* Mengatur tata letak kolom */
+  justify-content: space-between; /* Menyebar secara merata di antara elemen */
+  align-items: flex-start; /* Memposisikan elemen ke kiri */
+  padding: 10px;
+}
+
+.detail-box h5 {
+  margin-bottom: 10px; /* Margin bawah untuk memisahkan judul dan harga */
+}
+
+.detail-box h6 {
+  margin-top: auto; /* Menempatkan harga ke bawah */
 }
 
 .product_section .options {
@@ -668,6 +709,7 @@ padding: 150px 0 75px 0;
   -o-object-fit: cover;
   object-fit: cover;
   animation: moveUpDown 2s infinite alternate; /* Menggunakan animasi, 2 detik durasi, dan pengulangan alternatif */
+  margin-left: 20px;
 }
 
 

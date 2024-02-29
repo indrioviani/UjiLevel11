@@ -6,7 +6,7 @@
     <style type="text/css">
         .div_center{
             text-align: center;
-            padding-top: 40px;
+            
         }
         .font_size{
             font-size: 40px;
@@ -42,7 +42,7 @@
           </div>
           @endif
             <div class="div_center">
-                <h1 class="font_size">
+                <h1 href=""class="font_size">
                     Add Product
                 </h1>
                 <form action="{{url('/add_product')}}" method="POST" enctype="multipart/form-data">
