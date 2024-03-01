@@ -57,7 +57,7 @@
     <div class="layout-wrapper layout-content-navbar">
       <div class="layout-container">
         <!-- Menu -->
-        <div class="layout-page">
+
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
           <div class="app-brand demo">
             <a href="index.html" class="app-brand-link">
@@ -112,14 +112,13 @@
                 <a href="#" class="app-brand demo menu-link fw-bold text-center">
                     <span class="app-brand-img">
                  <img src="images/logoo.png" alt="Nama Brand">
-                 </span><br>
+                 </span><br></br>
               <span class="app-brand-text demo menu-text fw-bolder ms-2">Admin</span>
             </a>
 
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
               <i class="bx bx-chevron-left bx-sm align-middle"></i>
             </a>
-            
           </div>
 
           <div class="menu-inner-shadow"></div>
@@ -135,7 +134,7 @@
 
             <!-- Layouts -->
             <li class="menu-item">
-              <a href="{{url ('/show_product')}}"class="menu-link">
+              <a href="{{url ('/show_product')}}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-layout"></i>
                 <div data-i18n="Layouts">Menu</div>
               </a>
@@ -146,31 +145,12 @@
                 <i class="menu-icon tf-icons bx bx-dock-top"></i>
                 <div data-i18n="Account Settings">Category</div>
               </a>
+              
             </ul>
 </aside>
-
-  
-
-  <!-- Core JS -->
-    <!-- build:js assets/vendor/js/core.js -->
-    <script src="adminn/assets/vendor/libs/jquery/jquery.js"></script>
-    <script src="adminn/assets/vendor/libs/popper/popper.js"></script>
-    <script src="adminn/assets/vendor/js/bootstrap.js"></script>
-    <script src="adminn/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-
-    <script src="adminn/assets/vendor/js/menu.js"></script>
-    <!-- endbuild -->
-
-    <!-- Vendors JS -->
-    <script src="adminn/assets/vendor/libs/apex-charts/apexcharts.js"></script>
-
-    <!-- Main JS -->
-    <script src="adminn/assets/js/main.js"></script>
-
-    <!-- Page JS -->
-    <script src="adminn/assets/js/dashboards-analytics.js"></script>
-
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+<!DOCTYPE html>
+  </head>
+  <body>
+  <div class="layout-page">
 </body>
 </head>

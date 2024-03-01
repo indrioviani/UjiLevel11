@@ -84,7 +84,7 @@
                      <td><img class="img_deg" src="/product/{{$cart->image}}"></td>
                      <td>{{$cart->product_title}}</td>
                      <td>{{$cart->quantity}}</td>
-                     <td>Rp {{$cart->price}}000</td>
+                     <td>Rp {{$cart->price}}</td>
                     
                      <td><a class="btn btn-danger" onclick="return confirm('Are you sure to remove this product?')" href="{{url('remove_cart', $cart->id)}}">Remove Product</a></td>
                   </tr>

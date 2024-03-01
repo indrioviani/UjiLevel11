@@ -15,9 +15,6 @@
                            <a href="{{ route('login') }}" class="option1">
                            Add To Cart
                            </a>
-                           <a href="{{ route('login') }}" class="option1">
-                           Lihat Detail
-                           </a>
                            <form action="{{url('add_cart', $products->id)}}" method="Post">
                               @csrf
                               <div class="row">

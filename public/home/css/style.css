@@ -978,6 +978,25 @@ padding: 150px 0 75px 0;
 }
 
 /* footer section*/
+.footern h2 {
+  position: relative;
+  margin-bottom: 0;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.footern h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 5px;
+  background: #f7409c;;
+  margin: 10px auto 10px;
+}
+
+.footern h2 span {
+color: #f7409c;
+}
 .footer_section {
   background-color: #002c3e;
   color: #ffffff;

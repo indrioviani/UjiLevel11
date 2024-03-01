@@ -6,7 +6,7 @@
     <style type="text/css">
         .div_center{
             text-align: center;
-            
+            padding-top: 40px;
         }
         .font_size{
             font-size: 40px;
@@ -42,47 +42,37 @@
           </div>
           @endif
             <div class="div_center">
-                <h1 href=""class="font_size">
-                    Add Product
+                <h1 class="font_size">
+                    Tambah Produk
                 </h1>
                 <form action="{{url('/add_product')}}" method="POST" enctype="multipart/form-data">
                   @csrf
                 <div class="div_design">
-                <label>Product Title :</label>
-                <input class="text_color" type="text" name="title" placeholder="Write a Title" required="">
+                <label>Nama Produk :</label>
+                <input class="text_color" type="text" name="title" placeholder="Tulis Nama Produk" required="">
                 </div>
                 <div class="div_design">
-                <label>Product Description :</label>
-                <input class="text_color" type="text" name="description" placeholder="Write a Description" required="">
-                </div>
-                <div class="div_design">
-                <label>Product Price :</label>
-                <input class="text_color" type="number" name="price" placeholder="Write a Price" required="">
-                </div>
-                <div class="div_design">
-                <label>Discount Price :</label>
-                <input class="text_color" type="number" name="disc_price" placeholder="Write a Discount">
-                </div>
-                <div class="div_design">
-                <label>Product Quantity :</label>
-                <input class="text_color" type="number" min="0" name="quantity" placeholder="Write a Quantity" required="">
+                <label>Harga Produk :</label>
+                <input class="text_color" type="number" name="price" placeholder="Tulis Harga Produk" required="">
                 </div>
                 <div class="div_design">
                 <label>Product Category :</label>
                 <select class="text_color" name="category" required="">
-                    <option value="" selected="">Add a Category Here</option>
+                    <option value="" selected="">Tambahkan Kategori Di Sini</option>
                     @foreach($category as $category)
                     <option value="{{$category->category_name}}">{{$category->category_name}}</option>
                     @endforeach
                 </select>
                 </div>
                 <div class="div_design" >
-                <label>Product Image Here :</label>
+                <label>Gambar Produk :</label>
                 <input type="file" name="image" required="">
                 </div>
-                <div class="div_design">
-                <input type="submit" value="Add Product" class="btn btn-primary" name="image">
-                </div>
+
+                <form action="{{url ('/show_product')}}" method="GET">
+                  <input type="submit" value="Tambah Produk" class="btn btn-primary" name="submit">
+                </form>
+            
               </form>
             </div>
           </div>

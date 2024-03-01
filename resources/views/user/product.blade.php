@@ -8,21 +8,18 @@
             <div class="row">
                @foreach($product as $products)
                
-                  <div class="col-sm-6 col-md-4 col-lg-4">
-    <div class="box">
-        <form action="{{url('add_cart', $products->id)}}" method="Post">
-            @csrf
-            <div class="option_container">
-                <div class="row">
-                    <div class="col-md-12 mb-3">
-                        <input type="number" name="quantity" value="1" min="1" style="width: 100%;" placeholder="Quantity">
-                    </div>
-                    <div class="col-md-12 mb-3">
-                        <input class="input" type="submit" value="Add To Cart" style="width: 100%;">
-                    </div>
-                    <div class="col-md-12">
-                        <a href="" class="option1 btn btn-primary" style="width: 100%;">Product Details</a>
-                    </div>
+               <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="box">
+                     <form action="{{url('add_cart', $products->id)}}" method="Post">
+                        @csrf
+                        <div class="option_container">
+                           <div class="row">
+                              <div class="col-md-12 mb-3 d-flex justify-content-center">
+                                 <input type="number" name="quantity" value="1" min="1" style="width: 50%;" placeholder="Quantity">
+                           </div>
+                              <div class="col-md-12 mb-3 d-flex justify-content-center">
+                        <input class="input" type="submit" value="Add To Cart" style="width: 50%;">
+                        </div>
                 </div>
             </div>
         </form>

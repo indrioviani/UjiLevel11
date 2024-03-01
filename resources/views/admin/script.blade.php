@@ -1,18 +1,23 @@
-<script src="admin/assets/vendors/js/vendor.bundle.base.js"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page -->
-    <script src="admin/assets/vendors/chart.js/Chart.min.js"></script>
-    <script src="admin/assets/vendors/progressbar.js/progressbar.min.js"></script>
-    <script src="admin/assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
-    <script src="admin/assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-    <script src="admin/assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
-    <!-- End plugin js for this page -->
-    <!-- inject:js -->
-    <script src="admin/assets/js/off-canvas.js"></script>
-    <script src="admin/assets/js/hoverable-collapse.js"></script>
-    <script src="admin/assets/js/misc.js"></script>
-    <script src="admin/assets/js/settings.js"></script>
-    <script src="admin/assets/js/todolist.js"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page -->
-    <script src="admin/assets/js/dashboard.js"></script>
+<!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="adminn/assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="adminn/assets/vendor/libs/popper/popper.js"></script>
+    <script src="adminn/assets/vendor/js/bootstrap.js"></script>
+    <script src="adminn/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="adminn/assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="adminn/assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+    <!-- Main JS -->
+    <script src="adminn/assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="adminn/assets/js/dashboards-analytics.js"></script>
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="adminn/assets/vendor/js/helpers.js"></script>
+    <script src="adminn/assets/js/config.js"></script>

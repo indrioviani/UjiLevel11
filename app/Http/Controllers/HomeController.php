@@ -18,25 +18,27 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $product=Product::paginate(10);
+        $product=Product::paginate(3);
         return view('home.userpage', compact('product'));
     }
 
     public function redirect()
     {
-        $usertype=Auth::user()->usertype;
-
-        if($usertype=='1')
-        {
-            return view('admin.body');
+        if(Auth::check()) {
+            $user = Auth::user();
+            $usertype = $user->usertype;
+    
+            if($usertype == '1') {
+                return view('admin.body');
+            } else {
+                $product = Product::paginate(3);
+                return view('user.userpage', compact('product'));
+            }
+        } else {
+            return redirect('login');
         }
-
-        else
-        {
-            $product=Product::paginate(10);
-            return view('user.userpage', compact('product'));
-        } 
     }
+    
         public function add_cart(Request $request, $id)
     {
         if(Auth::id())
